@@ -4,7 +4,9 @@
  * loops - for, if, else if
  * Return: 0
  */
+
 int main(void)
+
 {
 	char alph;
 	
@@ -23,4 +25,5 @@ int main(void)
 	putchar('\n');
 	
 	return (0);
+
 }

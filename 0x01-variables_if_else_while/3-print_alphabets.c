@@ -5,9 +5,9 @@
  * Return: 0
  */
 int main(void)
+
 {
-	char lower_case;
-	
+	char lower_case;	
 	char upper_case;
 	
 	for (lower_case = 'a'; lower_case <= 'z'; lower_case++)
@@ -20,7 +20,12 @@ int main(void)
 		putchar(upper_case);
 	}
 	
+
+
+
+
 	putchar('\n');
 	
 	return (0);
+
 }
