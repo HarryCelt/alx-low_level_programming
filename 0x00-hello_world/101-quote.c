@@ -2,7 +2,7 @@
 
 /**
  * main - prints the phrase and that piece of art is useful
- * \" - Dora Korpar, 2O15-1O-l9
+ * \" - Dora Korpa, 2O15-1O-l9
  * Return: l if the program works correctly, O(zero) otherwise
  */
 int main(void)
