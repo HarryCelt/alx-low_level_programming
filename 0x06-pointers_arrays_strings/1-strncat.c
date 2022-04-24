@@ -1,34 +1,33 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - concatenates two stings
- * @s1: A pointer to a character that will be changed
- * @s2: same as above
- * Return: Always 0.
+ * _strncat - concatenates two stings
+ * @dest: A pointer to a character that will be changed
+ * @src: same as above
+ * @n: the number of bytes to use from src.
+ * Return: dest
  */
-int main(void)
+char *_strcat(char *dest, char *src, int n)
 {
-	char *_strcat(char *s1, char *s2)
+	int i, j;
+
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		int i, j;
-
-		i = 0;
-		while (s1[i] != '\0')
-		{
-			i++
-		}
-
-		j = 0;
-		while (s2[j] != '\0')
-		{
-			s1[i] =  s2[j];
-			j++;
-			i++;
-		}
-		s1[i] = '\0';
-
-		return (s1);
+		i++;
 	}
 
+	j = 0;
+	while (src[j] != '\0' && n > k)
+	{
+		dest[i] =  src[j];
+		j++;
+		i++;
+	}
+	if (n > 0)
+	{
+		dest[i] = '\0';
+	}
+
+	return (dest);
 }
