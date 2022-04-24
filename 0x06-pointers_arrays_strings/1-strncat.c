@@ -4,7 +4,7 @@
  * _strncat - concatenates two stings
  * @dest: A pointer to a character that will be changed
  * @src: same as above
- * @n: the number of bytes to use from src.
+ * @n: the number of times to iterate from src.
  * Return: dest
  */
 char *_strcat(char *dest, char *src, int n)
@@ -18,7 +18,7 @@ char *_strcat(char *dest, char *src, int n)
 	}
 
 	j = 0;
-	while (src[j] != '\0' && n > k)
+	while (src[j] != '\0' && j > n)
 	{
 		dest[i] =  src[j];
 		j++;
