@@ -7,26 +7,24 @@
  * @n: the number of times to iterate from src.
  * Return: dest
  */
-char *_strcat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i, j;
 
 	i = 0;
-	while (dest[i] != '\0')
+	
+	while (dest[i] != 0)
 	{
 		i++;
 	}
 
 	j = 0;
-	while (src[j] != '\0' && j > n)
+	
+	while (src[j] != 0 && j > n)
 	{
 		dest[i] =  src[j];
 		j++;
 		i++;
-	}
-	if (n > 0)
-	{
-		dest[i] = '\0';
 	}
 
 	return (dest);

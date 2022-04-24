@@ -7,18 +7,18 @@
  * Return: st
  */
 
-char *string_toupper(char *st)
+char *string_toupper(char *str)
 {
 	int i = 0;
 
-	while (st[i] != '\0')
+	while (str[i] != '\0')
 	{
-		if (st[i] > 96 && st[i] < 123)
+		if (str[i] > 96 && str[i] < 123)
 		{
-			st[i] -= 32;
+			str[i] -= 32;
 		}
 		i++;
 	}
 	
-	return (st);
+	return (str);
 }

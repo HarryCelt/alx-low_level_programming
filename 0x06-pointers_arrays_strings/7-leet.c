@@ -21,8 +21,9 @@ char *leet(char *s)
 			{
 				s[i] = array_leet[j];
 			}
-			i++;
+			k++;
 		}
+		i++;
 	}
 
 	return (s);
