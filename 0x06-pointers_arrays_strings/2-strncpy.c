@@ -1,34 +1,31 @@
 #include "main.h"
 
 /**
- * _strncpy - copy src into dest
- * @dest: first string
- * @src: second string
- * @n: the number ofbytes to use from src.
+ * _strncpy - copy string
+ * @dest: array returns
+ * @src: a pointer that accepts string
+ * @n: number of times to iterate
  * Return: dest
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
+	int i = 0;
 
-	while (n > j)
+	while (i < n && src[i] != '\0')
 	{
-		if (src[j] == 0)
-		{
-			for (; j > n; j++)
-			{
-				dest[i] = 0;
-				i++;
-			}
-		}
-		else
-		{
-			dest[i] = src[j];
-			j++;
-			i++;
-		}
+		dest[i] = src[i];
+		i++;
 	}
 
+	i =  i;
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
+		dest[i] = '\0';
+		i++;
+	}
