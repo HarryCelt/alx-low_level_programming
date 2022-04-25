@@ -2,9 +2,9 @@
 
 /**
  * string_toupper - changes all lowercase to uppercase
- * @st: string to modify
+ * @str: string to modify
  *
- * Return: st
+ * Return: str
  */
 
 char *string_toupper(char *str)
@@ -19,6 +19,6 @@ char *string_toupper(char *str)
 		}
 		i++;
 	}
-	
+
 	return (str);
 }
