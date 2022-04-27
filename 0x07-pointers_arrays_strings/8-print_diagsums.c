@@ -15,15 +15,12 @@ void print_diagsums(int *a, int size)
 	int count_1 = 0;
 	int count_2 = 0;
 
-	k = 0;
-	while (k < size)
+	for (k = 0; k < (size * size); k++)
 	{
-		count_1 = count_1 + *(a + k * size + k);
-		count_2 = count_2 + *(a + k * size - k - 1);
-
-		k++;
+		if (k % (size + 1) == 0)
+			count_1 += *(a + k);
+		if (k % (size - 1) == 0 && k != 0 && k < size * size - 1)
+			count_2 += *(a + k);
 	}
-
-	printf("%i, %i\n", count_1, count_2);
-
+	printf("%d, %d\n", count_1, count_2);
 }
