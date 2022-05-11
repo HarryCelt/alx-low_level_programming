@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - when letter is 
+ * print_sign - when letter is
  * lowercase = 0, uppercase = 1
  * @n: the int to print
  * Return: 0
@@ -17,7 +17,7 @@ int print_sign(int n)
 	else
 	{
 		_putchar ('-');
-		return (-1);
+		return (0);
 	}
 
 }
