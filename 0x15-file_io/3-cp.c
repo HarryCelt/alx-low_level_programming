@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	int file_dread, file_write, reda, i, j;
+	int file_read, file_write, reda, i, j;
 	char buff[BUFSIZ];
 
 	if (argc != 3)
