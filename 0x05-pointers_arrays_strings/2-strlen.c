@@ -6,7 +6,7 @@
  *  Return: void that means our is correct
  */
 
-int -strlen(char *s)
+int _strlen(char *s)
 {
 	int u;
 	u = 0;
